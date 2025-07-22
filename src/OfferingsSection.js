@@ -9,7 +9,7 @@ const offerings = [
   {
     title: "PCB Design & Fabrication",
     image: "/roboracter-pcb-design.webp",
-    description: "We offer complete PCB design and fabrication services to help bring your electronic and robotic projects from concept to reality. Our team specializes in creating custom schematic designs and professionally laid-out PCBs tailored to your requirements. Whether it’s a single-layer board for a student project or a complex multi-layer circuit for advanced robotics, we ensure precision, functionality, and manufacturability. Once the design is finalized, we handle the fabrication process to deliver high-quality, production-ready boards—saving time and ensuring reliable performance. Our PCB and schematic design services are tailored for students, makers, and institutions looking to bring their ideas to life with professional precision. From concept to final layout, we assist in designing custom schematics and compact, reliable PCBs for robotics and automation projects. Whether it’s a simple Arduino-based system or a complex multi-layer board, we ensure accuracy and manufacturability at every stage."
+    description: "We offer complete PCB design and fabrication services to help bring your electronic and robotic projects from concept to reality. Our team specializes in creating custom schematic designs and professionally laid-out PCBs tailored to your requirements. Whether it’s a single-layer board for a student project or a complex multi-layer circuit for advanced robotics, we ensure precision and manufacturability. Once the design is finalized, we handle the fabrication process to deliver high-quality, production-ready boards—saving time and ensuring reliable performance. Our PCB and schematic design services are tailored for students, makers, and institutions looking to bring their ideas to life with professional precision. From concept to final layout, we assist in designing custom schematics and compact, reliable PCBs for robotics and automation projects. Whether it’s a simple Arduino-based system or a complex multi-layer board, we ensure accuracy and manufacturability at every stage."
   },
   {
     title: "Drone Devlopment",
@@ -60,16 +60,16 @@ const OfferingsSection = ({ onEnrollClick }) => (
           <span className="inline-block align-middle" style={{width: '90px', height: '4px', background: '#ef4444', borderRadius: '2px'}}></span>
         </div>
       </div>
-      <div className="max-w-[1584px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center mb-16">
+      <div className="max-w-[1584px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-16">
         {offerings.map((offering, idx) => (
-          <div key={idx} className="bg-gray-900 rounded-3xl shadow-lg flex flex-col justify-between items-center transition hover:shadow-2xl pt-0 px-0 pb-10" style={{minHeight: 720, borderRadius: '48px 0 24px 24px'}}>
+          <div key={idx} className="bg-gray-900 rounded-3xl shadow-lg flex flex-col h-full w-full justify-between items-center transition hover:shadow-2xl pt-0 px-0 pb-10" style={{borderRadius: '48px 0 24px 24px'}}>
             <div className="w-full aspect-[4/3] overflow-hidden" style={{padding: '5px', borderTopLeftRadius: 48, borderTopRightRadius: 0}}>
               <img src={offering.image} alt={offering.title} className="w-full h-full object-cover" style={{borderTopLeftRadius: 43, borderTopRightRadius: 0}} />
             </div>
-            <div className="flex flex-col items-center px-8 py-6 w-full">
+            <div className="flex flex-col items-center px-8 py-6 w-full flex-1">
               <h3 className="text-2xl font-extrabold text-white text-center mb-2">{offering.title}</h3>
               <div className="w-12 h-1 bg-yellow-400 rounded mb-4"></div>
-              <p className="text-white text-center mb-6 services-card-matter">{offering.description}</p>
+              <p className="text-white text-center mb-6 services-card-matter flex-1">{offering.description}</p>
               <button className="mt-auto bg-blue-700 text-white px-8 py-2 rounded-full font-bold text-lg shadow hover:bg-blue-800 transition services-card-matter" onClick={typeof onEnrollClick === 'function' ? onEnrollClick : undefined}>Enroll Now</button>
             </div>
           </div>
