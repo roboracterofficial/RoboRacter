@@ -2,7 +2,7 @@ import React from "react";
 
 const offerings = [
   {
-    title: "Workshop in School / Colleges",
+    title: "Workshop in (School / Colleges)",
     image: "/roboracter-Workshop.jpg",
     description: "Our customized robotics project services are desOur robotics workshops in schools and colleges provide hands-on learning experiences that inspire creativity, critical thinking, and technical skills among students. These workshops cover the fundamentals of electronics, programming, and mechanical design using Arduino and other platforms, enabling participants to build real-world robotic systems. From basic line-followers to advanced obstacle-avoiding robots, each session is structured to suit the learners' age and expertise. We focus on practical application, teamwork, and innovation—making robotics both educational and fun.igned to help students, hobbyists, and institutions turn their unique ideas into fully functional prototypes. Whether it's for school competitions, college assignments, or personal innovation, we offer end-to-end support—including project planning, circuit design, coding, sensor integration, and final testing. Each project is tailored to meet specific goals, budgets, and technical levels."
   },
