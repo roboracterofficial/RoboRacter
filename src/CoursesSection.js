@@ -4,21 +4,21 @@ const courses = [
   {
     title: "Autobot Basic Level",
     image: "/roboracterAutobotBasicLevel.jpg",
-    description: "Electronic components are the building blocks of all circuits. Key components include resistors (limit current), capacitors (store charge), diodes (control current direction), transistors (amplify or switch signals), and LEDs (light-emitting diodes for indicators). Learning how each part works and connects on a breadboard is the first step in understanding and designing basic robotic systems.",
+    description: "Electronic components are the building blocks of all circuits. Key components include resistors (limit current), capacitors (store charge), diodes (control current direction), transistors (amplify or switch signals), and LEDs (light-emitting diodes for indicators). Learning how each part works and connects on a breadboard is the first step in understanding and designing basic robots.",
     checklist: ["Age 7+", "Basic Level Course", "Take Away Robotics Kit"],
     cta: "Explore"
   },
   {
     title: "Autobot Intermediate",
     image: "/roboracterAutobotIntermediate.jpg",
-    description: "At the intermediate level, Autobot projects involve building robots that respond to their environment using basic sensors like IR (infrared), ultrasonic, and light sensors. These sensors help the robot detect obstacles, follow lines, or avoid edges. Students learn to effectively integrate sensor inputs with simple digital logic circuits, bringing more interaction and intelligence to their robotic creations.",
+    description: "At the intermediate level, Autobot projects involve building robots that respond to their environment using basic sensors like IR (infrared), ultrasonic, and light sensors. These sensors help the robot detect obstacles, follow lines, or avoid edges. Students learn to effectively integrate sensor inputs with simple digital logic circuits, bringing more interaction and intelligence to their robots.",
     checklist: ["Age 11+", "Intermediate Level Course", "Take Away Add-on Sensor Kit"],
     cta: "Explore"
   },
   {
     title: "Autobot Advanced",
     image: "/roboracterAutobotAdvanced.jpg",
-    description: "At the advanced level, robots don't just react—they think intelligently. Using various sensors to map surroundings, detect junctions, and choose optimal routes, they apply advanced techniques like line mapping, dead-end detection, and decision trees. This level builds essential skills in both hardware integration and programming logic, showing how robots can effectively solve complex real-world challenges.",
+    description: "At the advanced level, robots don't just react—they think intelligently. Using various sensors to map surroundings, detect junctions, and choose fastest and most optimal routes. This level builds essential skills in both hardware integration and programming logic, showing how robots can effectively solve complex real-world challenges.",
     checklist: ["Age 14+", "Advanced Level Course", "Take Away Add-on Sensor Kit"],
     cta: "Explore"
   },
@@ -68,17 +68,12 @@ const CoursesSection = ({ onEnrollClick }) => (
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {courses.map((course, idx) => (
           <div key={idx} className="w-full bg-white rounded-3xl shadow-lg p-10 flex flex-col justify-between items-center transition hover:shadow-2xl" style={{minHeight: cardMinHeight, maxWidth: cardMaxWidth, margin: '0 auto'}}>
-            <div className="w-full max-w-[445px] h-[200px] sm:h-[230px] md:h-[256px] mb-6 bg-white flex items-center justify-center rounded-xl overflow-hidden">
+            <div className="w-full mb-6 rounded-xl overflow-hidden" style={{padding: '5px', height: 320}}>
               <img
                 src={course.image}
                 alt={course.title}
-                className={`w-full h-full object-cover${idx === 1 ? ' scale-125' : ''}`}
+                className="w-full h-full object-cover rounded-xl"
               />
-            </div>
-            <div className="flex items-center mb-3">
-              {[...Array(5)].map((_, i) => (
-                <svg key={i} className="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.54-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z"/></svg>
-              ))}
             </div>
             {idx === 5 ? (
               <div className="text-center mb-3">
@@ -88,8 +83,8 @@ const CoursesSection = ({ onEnrollClick }) => (
             ) : (
               <h3 className="text-3xl font-bold text-center text-gray-800 mb-3" style={headingStyle}>{course.title}</h3>
             )}
-            <p className="text-blue-700 text-center mb-6 text-lg">{course.description}</p>
-            <ul className="mb-6 space-y-2 w-full">
+            <p className="text-blue-700 text-center mb-6 text-lg courses-body-small">{course.description}</p>
+            <ul className="mb-6 space-y-2 w-full courses-body-small">
               {course.checklist.map((item, i) => (
                 <li key={i} className="flex items-center text-gray-700 text-lg">
                   <svg className="w-6 h-6 text-blue-600 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L8 12.586l-3.293-3.293a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l8-8a1 1 0 0 0-1.414z" clipRule="evenodd" /></svg>
