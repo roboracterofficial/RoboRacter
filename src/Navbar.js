@@ -45,7 +45,7 @@ const Navbar = (props) => {
           {/* Logo on extreme left */}
           <div className="flex items-center">
             <Link to="/">
-              <img src="/roboracter-logo.png" alt="Roboracter Logo" className="w-20 h-[80px] sm:w-24 sm:h-[100px] md:w-28 md:h-[115px] lg:w-32 lg:h-[130px] mt-4" />
+              <img src="/roboracter-logo.png" alt="Roboracter Logo" className="w-10 h-[36px] sm:w-12 sm:h-[48px] md:w-16 md:h-[64px] lg:w-20 lg:h-[80px] mt-1" />
             </Link>
           </div>
           {/* Navigation links centered - hidden on mobile, visible on tablet+ */}
