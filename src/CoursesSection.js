@@ -9,7 +9,7 @@ const courses = [
     cta: "Explore"
   },
   {
-    title: "Autobot Intermediate",
+    title: "Autobot-Intermediate",
     image: "/roboracterAutobotIntermediate.jpg",
     description: "At the intermediate level, Autobot projects involve building robots that respond to their environment using basic sensors like IR (infrared), ultrasonic, and light sensors. These sensors help the robot detect obstacles, follow lines, or avoid edges. Students learn to effectively integrate sensor inputs with simple digital logic circuits, bringing more interaction and intelligence to their robotic creations.",
     checklist: ["Age 11+", "Intermediate Level Course", "Take Away Add-on Sensor Kit"],
