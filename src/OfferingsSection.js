@@ -2,19 +2,19 @@ import React from "react";
 
 const offerings = [
   {
-    title: "On Demand Workshops",
+    title: "Workshop in School / Colleges",
     image: "/roboracter-Workshop.jpg",
     description: "Our customized robotics project services are desOur robotics workshops in schools and colleges provide hands-on learning experiences that inspire creativity, critical thinking, and technical skills among students. These workshops cover the fundamentals of electronics, programming, and mechanical design using Arduino and other platforms, enabling participants to build real-world robotic systems. From basic line-followers to advanced obstacle-avoiding robots, each session is structured to suit the learners' age and expertise. We focus on practical application, teamwork, and innovation—making robotics both educational and fun.igned to help students, hobbyists, and institutions turn their unique ideas into fully functional prototypes. Whether it's for school competitions, college assignments, or personal innovation, we offer end-to-end support—including project planning, circuit design, coding, sensor integration, and final testing. Each project is tailored to meet specific goals, budgets, and technical levels."
   },
   {
     title: "PCB Design & Fabrication",
     image: "/roboracter-pcb-design.webp",
-    description: "We offer complete PCB design and fabrication services to help bring your electronic and robotic projects from concept to reality. Our team specializes in creating custom schematic designs and professionally laid-out PCBs tailored to your requirements. Whether it’s a single-layer board for a student project or a complex multi-layer circuit for advanced robotics, we ensure precision, functionality, and manufacturability. Once the design is finalized, we handle the fabrication process to deliver high-quality, production-ready boards—saving time and ensuring reliable performance. Our PCB and schematic design services are tailored for students, makers, and institutions looking to bring their ideas to life with professional precision. From concept to final layout, we assist in designing custom schematics and compact, reliable PCBs for robotics and automation projects. Whether it’s a simple Arduino-based system or a complex multi-layer board, we ensure accuracy and manufacturability at every stage."
+    description: "We offer complete PCB design and fabrication services to help bring your electronic and robotic projects from concept to reality. Our team specializes in creating custom schematic designs and professionally laid-out PCBs tailored to your requirements. Whether it’s a single-layer board for a student project or a complex multi-layer circuit for advanced robotics, we ensure precision, functionality, and manufacturability. Once the design is finalized, we handle the fabrication process to deliver high-quality, production-ready boards—saving time and ensuring reliable performance. Our PCB and schematic design services are tailored for students, makers, and institutions looking to bring their ideas to life with professional precision. From concept to final layout, we assist in designing custom schematics and compact, reliable PCBs for robotics and automation projects. Whether it’s a simple Arduino-based system or a complex multi-layer board, we ensure accuracy, functionality, and manufacturability at every stage."
   },
   {
     title: "Drone Devlopment",
     image: "/roboracterDrone-Devlopment.png",
-    description: "Our drone workshops in robotics offer students and enthusiasts a practical introduction to the world of aerial technology and automation. Participants learn the core principles of drone mechanics, flight control, and wireless communication while assembling and programming their own drones. Using components like flight controllers, sensors, and brushless motors, they gain hands-on experience in both hardware and software integration. Each workshop is tailored to skill level and curriculum needs, blending education with excitement to spark innovation in modern robotics. Through guided projects and flight simulations, participants also develop critical thinking and troubleshooting skills. This will help foster curiosity, creativity and imagination in young minds and inculcate skills such as design mind set, computational thinking, adaptive learning, etc. Learn new age technologies like Robotics, 3D Printing, Open Source Programming, and Drones from experts at your convenience."
+    description: "Our drone workshops in robotics offer students and enthusiasts a practical introduction to the world of aerial technology and automation. Participants learn the core principles of drone mechanics, flight control, and wireless communication while assembling and programming their own drones. Using components like flight controllers, sensors, and brushless motors, they gain hands-on experience in both hardware and software integration. Each workshop is tailored to skill level and curriculum needs, blending education with excitement to spark innovation in modern robotics. Through guided projects and flight simulations, participants also develop critical thinking and troubleshooting skills. This will help foster curiosity, creativity and imagination in young minds; and inculcate skills such as design mind set, computational thinking, adaptive learning, physical computing, etc. Learn new age technologies like Robotics, 3D Printing, Open Source Programming, and Drones from experts at your convenience."
   }
 ];
 
@@ -67,8 +67,8 @@ const OfferingsSection = ({ onEnrollClick }) => (
             <div className="flex flex-col items-center px-8 py-6 w-full">
               <h3 className="text-2xl font-extrabold text-white text-center mb-2">{offering.title}</h3>
               <div className="w-12 h-1 bg-yellow-400 rounded mb-4"></div>
-              <p className="text-white text-center mb-6 services-card-matter">{offering.description}</p>
-              <button className="mt-auto bg-blue-700 text-white px-8 py-2 rounded-full font-bold text-lg shadow hover:bg-blue-800 transition services-card-matter" onClick={typeof onEnrollClick === 'function' ? onEnrollClick : undefined}>Enroll Now</button>
+              <p className="text-white text-center mb-6">{offering.description}</p>
+              <button className="mt-auto bg-blue-700 text-white px-8 py-2 rounded-full font-bold text-lg shadow hover:bg-blue-800 transition" onClick={typeof onEnrollClick === 'function' ? onEnrollClick : undefined}>Enroll Now</button>
             </div>
           </div>
         ))}
