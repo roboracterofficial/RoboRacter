@@ -45,7 +45,7 @@ const expertise = [
   }
 ];
 
-const OfferingsSection = () => (
+const OfferingsSection = ({ onEnrollClick }) => (
   <section className="py-12 bg-gray-50" id="offerings">
     <div className="px-2 sm:px-4 lg:px-6">
       <div className="text-center mb-8">
@@ -62,13 +62,13 @@ const OfferingsSection = () => (
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         {offerings.map((offering, idx) => (
-          <div key={idx} className="bg-gray-900 shadow-lg flex flex-col justify-between items-center transition hover:shadow-2xl" style={{minHeight: 720, borderRadius: '48px 0 24px 24px'}}>
+          <div key={idx} className="bg-gray-900 rounded-3xl shadow-lg p-10 flex flex-col justify-between items-center transition hover:shadow-2xl" style={{minHeight: 720, borderRadius: '48px 0 24px 24px'}}>
             <img src={offering.image} alt={offering.title} className="w-full" style={{height: 400, maxHeight: 400, objectFit: 'cover', borderTopLeftRadius: 48, borderTopRightRadius: 0}} />
             <div className="flex flex-col items-center px-8 py-6 w-full">
               <h3 className="text-2xl font-extrabold text-white text-center mb-2">{offering.title}</h3>
               <div className="w-12 h-1 bg-yellow-400 rounded mb-4"></div>
               <p className="text-white text-center mb-6">{offering.description}</p>
-              <button className="mt-auto bg-blue-700 text-white px-8 py-2 rounded-full font-bold text-lg shadow hover:bg-blue-800 transition">Explore</button>
+              <button className="mt-auto bg-blue-700 text-white px-8 py-2 rounded-full font-bold text-lg shadow hover:bg-blue-800 transition" onClick={typeof onEnrollClick === 'function' ? onEnrollClick : undefined}>Enroll Now</button>
             </div>
           </div>
         ))}

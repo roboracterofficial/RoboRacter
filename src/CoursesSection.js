@@ -50,7 +50,7 @@ const cardMinHeight = baseMinHeight * 1.1; // +10%
 const cardMaxWidth = 550;
 const headingStyle = { fontFamily: "'Roboto Slab', serif" };
 
-const CoursesSection = () => (
+const CoursesSection = ({ onEnrollClick }) => (
   <section id="courses" className="py-12 bg-gray-50">
     <div className="px-2 sm:px-4 lg:px-6">
       <div className="text-center mb-8">
@@ -97,7 +97,7 @@ const CoursesSection = () => (
                 </li>
               ))}
             </ul>
-            <button className="mt-auto bg-blue-700 text-white px-10 py-3 rounded-full font-bold text-xl shadow hover:bg-blue-800 transition">Explore</button>
+            <button className="mt-auto bg-blue-700 text-white px-10 py-3 rounded-full font-bold text-xl shadow hover:bg-blue-800 transition" onClick={typeof onEnrollClick === 'function' ? onEnrollClick : undefined}>Enroll Now</button>
           </div>
         ))}
       </div>

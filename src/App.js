@@ -31,12 +31,12 @@ function PageLayout({ onContactClick, isContactOpen, closeContact }) {
   );
 }
 
-function Home() {
+function Home({ onEnrollClick }) {
   return (
     <>
       <HeroSection />
-      <CoursesSection />
-      <OfferingsSection />
+      <CoursesSection onEnrollClick={onEnrollClick} />
+      <OfferingsSection onEnrollClick={onEnrollClick} />
       <QnASection />
     </>
   );
@@ -48,7 +48,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<PageLayout onContactClick={() => setContactOpen(true)} isContactOpen={isContactOpen} closeContact={() => setContactOpen(false)} />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home onEnrollClick={() => setContactOpen(true)} />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
