@@ -62,8 +62,8 @@ const OfferingsSection = ({ onEnrollClick }) => (
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         {offerings.map((offering, idx) => (
-          <div key={idx} className="bg-gray-900 rounded-3xl shadow-lg p-10 flex flex-col justify-between items-center transition hover:shadow-2xl" style={{minHeight: 720, borderRadius: '48px 0 24px 24px'}}>
-            <img src={offering.image} alt={offering.title} className="w-full" style={{height: 400, maxHeight: 400, objectFit: 'cover', borderTopLeftRadius: 48, borderTopRightRadius: 0}} />
+          <div key={idx} className="bg-gray-900 rounded-3xl shadow-lg flex flex-col justify-between items-center transition hover:shadow-2xl pt-0 px-0 pb-10" style={{minHeight: 720, borderRadius: '48px 0 24px 24px'}}>
+            <img src={offering.image} alt={offering.title} className="w-full" style={{height: 440, maxHeight: 440, objectFit: 'cover', borderTopLeftRadius: 48, borderTopRightRadius: 0, padding: '5px'}} />
             <div className="flex flex-col items-center px-8 py-6 w-full">
               <h3 className="text-2xl font-extrabold text-white text-center mb-2">{offering.title}</h3>
               <div className="w-12 h-1 bg-yellow-400 rounded mb-4"></div>
