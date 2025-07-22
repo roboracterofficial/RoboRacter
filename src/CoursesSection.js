@@ -11,21 +11,21 @@ const courses = [
   {
     title: "Autobot Intermediate",
     image: "/roboracterAutobotIntermediate.jpg",
-    description: "At the intermediate level, Autobot projects involve building robots that respond to their environment using basic sensors like IR (infrared), ultrasonic, and light sensors. These sensors help the robot detect obstacles, follow lines, or avoid edges. Students learn to integrate sensor inputs with simple logic circuits bringing more interaction and intelligence to their robotic creations.",
+    description: "At the intermediate level, Autobot projects involve building robots that respond to their environment using basic sensors like IR (infrared), ultrasonic, and light sensors. These sensors help the robot detect obstacles, follow lines, or avoid edges. Students learn to effectively integrate sensor inputs with simple digital logic circuits, bringing more interaction and intelligence to their robotic creations.",
     checklist: ["Age 11+", "Intermediate Level Course", "Take Away Add-on Sensor Kit"],
     cta: "Explore"
   },
   {
     title: "Autobot Advanced",
     image: "/roboracterAutobotAdvanced.jpg",
-    description: "At the advanced level robots don't just react—they think. Using sensors to map surroundings, detect junctions, and choose optimal routes, they apply techniques like line mapping, dead-end detection, and decision trees. This level builds skills in both hardware and programming, showing how robots can solve real-world challenges independently.",
+    description: "At the advanced level, robots don't just react—they think intelligently. Using various sensors to map surroundings, detect junctions, and choose optimal routes, they apply advanced techniques like line mapping, dead-end detection, and decision trees. This level builds essential skills in both hardware integration and programming logic, showing how robots can effectively solve complex real-world challenges.",
     checklist: ["Age 14+", "Advanced Level Course", "Take Away Add-on Sensor Kit"],
     cta: "Explore"
   },
   {
     title: "PCB Designing",
     image: "/roboracterPCBDesigning.jpg",
-    description: "PCB (Printed Circuit Board) designing is the process of creating a physical board that connects and supports electronic components. It replaces messy breadboards with a clean, compact, and reliable layout. Students learn to place components, draw tracks, and generate files for manufacturing using software like KiCad or EasyEDA, helping bring their robotic circuits to a professional level.",
+    description: "PCB (Printed Circuit Board) designing is the process of creating a board that connects and supports components. It replaces messy breadboards with a clean, compact, reliable layout. Students learn to place components, draw tracks, and generate files for manufacturing using software like EasyEDA, helping bring their robotic circuits to a professional level.",
     checklist: ["Age 14+", "Complete PCB Designing", "Take Away Designed PCB"],
     cta: "Explore"
   },
@@ -39,7 +39,7 @@ const courses = [
   {
     title: "Custom Projects For School & College",
     image: "/roboracterCustomProjects.jpg",
-    description: "We support school and college students in bringing their unique ideas to life through custom robotics and electronics projects. Whether it's a smart system, automation tool, or creative robot, we guide them from concept to completion—offering help with design, components, coding, and final assembly tailored to their requirements.",
+    description: "We support school and college students in bringing their ideas to life through custom robotics and electronics projects. Whether it's a smart system, automation tool, or creative robot, we guide them from concept to completion with design, components, coding, and final assembly tailored to their needs.",
     checklist: ["Age 7+", "Mentoring", "Project Guidance"],
     cta: "Explore"
   }

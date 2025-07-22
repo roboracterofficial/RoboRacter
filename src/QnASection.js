@@ -63,7 +63,7 @@ const QnASection = () => {
                 <div className="flex-1">
                   <div className="text-black font-bold text-lg mb-4 uppercase tracking-wide" style={{fontFamily: 'Roboto Slab, serif'}}>{item.question}</div>
                   {open[idx] && (
-                    <div className="text-black text-2xl leading-relaxed whitespace-pre-line">{item.answer}</div>
+                    <div className="text-black text-base leading-relaxed whitespace-pre-line">{item.answer}</div>
                   )}
                 </div>
                 <div className="flex-shrink-0 mt-2 sm:mt-0 ml-auto bg-green-100 rounded-full p-2">
