@@ -66,10 +66,10 @@ const CoursesSection = ({ onEnrollClick }) => (
         </div>
       </div>
       <div className="max-w-[1584px] mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 place-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-stretch">
           {courses.map((course, idx) => (
-            <div key={idx} className="bg-white rounded-3xl shadow-lg flex flex-col justify-between items-center transition hover:shadow-2xl" style={{height: cardMinHeight, maxWidth: cardMaxWidth, margin: '0 auto', paddingTop: '15px', paddingLeft: '15px', paddingRight: '15px', paddingBottom: '30px'}}>
-              <div className="w-full rounded-xl overflow-hidden aspect-[4/3]" style={{marginBottom: '26px'}}>
+            <div key={idx} className="bg-white rounded-3xl shadow-lg flex flex-col justify-between items-center transition hover:shadow-2xl h-full w-full" style={{maxWidth: cardMaxWidth, margin: '0 auto', paddingTop: '15px', paddingLeft: '15px', paddingRight: '15px', paddingBottom: '30px'}}>
+              <div className="w-full aspect-[4/3] overflow-hidden rounded-xl mb-6">
                 <img
                   src={course.image}
                   alt={course.title}
