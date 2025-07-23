@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "/roboracter-student1.jpg",
-  "/roboracter-student2.jpg",
-  "/roboracter-student3.jpg",
-  "/roboracter-student4.jpg",
-  "/roboracter-student5.jpg"
+  "/roboracter-student1.webp",
+  "/roboracter-student2.webp",
+  "/roboracter-student3.webp",
+  "/roboracter-student4.webp",
+  "/roboracter-student5.webp"
 ];
 
 const HeroSection = () => {
