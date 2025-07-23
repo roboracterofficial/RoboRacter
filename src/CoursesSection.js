@@ -18,7 +18,7 @@ const courses = [
   {
     title: "Autobot Advanced",
     image: "/roboracterAutobotAdvanced.jpg",
-    description: "At the advanced level, robots don't just react—they think intelligently. Using various sensors to map surroundings, detect junctions, and choose fastest and most optimal routes. This level builds essential skills in both hardware integration and programming logic, showing how robots can effectively solve complex real-world challenges.",
+    description: "At the advanced level, robots don't just react — they think and act intelligently. Using various sensors to map their surroundings, detect junctions, and choose the fastest and most optimal routes. This level builds essential skills in both hardware integration and programming logic, clearly showing how robots can effectively solve complex, real-world challenges with efficiency and precision.",
     checklist: ["Age 14+", "Advanced Level Course", "Take Away Add-on Sensor Kit"],
     cta: "Explore"
   },
@@ -32,7 +32,7 @@ const courses = [
   {
     title: "Wireless Robotics & Drones",
     image: "/roboracterWirelessRobotics&Drones.jpg",
-    description: "Wireless robotics and drones take robotics to the next level by adding remote control and communication features. Using modules like Bluetooth, Wi-Fi, or RF, students build robots or drones that can be operated from a smartphone or computer. This introduces concepts of real-time data transmission, control systems, and mobility in open environments.",
+    description: "Wireless robotics and drones take robotics to the next level by adding remote control and communication features. Using modules like Bluetooth, Wi-Fi, or RF, students build robots or drones that can be operated from a smartphone or computer. This introduces concepts of real time data transmission, control systems, and mobility in open environments.",
     checklist: ["Age 18+", "Basic Drone Building", "Take Away Designed Drone"],
     cta: "Explore"
   },
