@@ -3,7 +3,7 @@ import React from "react";
 const menuFont = { fontFamily: "'Roboto Slab', serif" };
 
 const PrivacyPolicy = () => (
-  <main className="flex-1 flex justify-center items-start px-2 sm:px-4" style={{paddingTop: 90, paddingBottom: 20}}>
+  <main className="flex-1 flex justify-center items-start px-2 sm:px-4" style={{paddingTop: 85, paddingBottom: 20}}>
     <div className="bg-white rounded-2xl shadow-lg max-w-3xl w-full mt-0 p-8 sm:p-12 mx-auto">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center" style={menuFont}>Privacy Policy – Roboracter</h1>
       <p className="mb-8 text-gray-700 text-lg text-center" style={menuFont}>At Roboracter, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you interact with our website and services.</p>

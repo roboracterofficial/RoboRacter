@@ -3,7 +3,7 @@ import React from "react";
 const menuFont = { fontFamily: "'Roboto Slab', serif" };
 
 const RefundPolicy = () => (
-  <main className="flex-1 flex justify-center items-start px-2 sm:px-4" style={{paddingTop: 90, paddingBottom: 20}}>
+  <main className="flex-1 flex justify-center items-start px-2 sm:px-4" style={{paddingTop: 85, paddingBottom: 20}}>
     <div className="bg-white rounded-2xl shadow-lg max-w-3xl w-full mt-0 p-8 sm:p-12 mx-auto">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center" style={menuFont}>Refund and Cancellation Policy Roboracter</h1>
       <p className="mb-8 text-gray-700 text-lg text-center" style={menuFont}>At Roboracter, we strive to provide high-quality robotics kits and services. Please read our refund and cancellation policy carefully before making a purchase.</p>

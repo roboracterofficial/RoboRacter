@@ -3,7 +3,7 @@ import React from "react";
 const menuFont = { fontFamily: "'Roboto Slab', serif" };
 
 const TermsConditions = () => (
-  <main className="flex-1 flex justify-center items-start px-2 sm:px-4" style={{paddingTop: 90, paddingBottom: 20}}>
+  <main className="flex-1 flex justify-center items-start px-2 sm:px-4" style={{paddingTop: 85, paddingBottom: 20}}>
     <div className="bg-white rounded-2xl shadow-lg max-w-3xl w-full mt-0 p-8 sm:p-12 mx-auto">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center" style={menuFont}>Terms and Conditions-Roboracter</h1>
       <p className="mb-8 text-gray-700 text-lg text-center" style={menuFont}>Welcome to Roboracter. These Terms and Conditions govern your use of our website, products, and services. By accessing or using our platform, you agree to comply with and be bound by these terms.</p>
