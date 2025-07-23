@@ -41,7 +41,7 @@ const QnASection = () => {
   return (
     <section className="py-16 bg-white relative overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img src="/Roboracter-q&a-2.jpg" alt="Q&A Background" className="w-full h-full object-cover opacity-30" />
+        <img src="/Roboracter-q&a-1.jpg.webp" alt="Q&A Background" className="w-full h-full object-cover opacity-30" />
       </div>
       <div className="max-w-5xl mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
