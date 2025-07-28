@@ -26,7 +26,7 @@ function PageLayout({ onContactClick, isContactOpen, closeContact }) {
       <ScrollToTop />
       <Navbar onContactClick={onContactClick} />
       <Outlet />
-      <Footer />
+      <Footer onContactClick={onContactClick} />
       <ContactModal isOpen={isContactOpen} onClose={closeContact} />
     </div>
   );

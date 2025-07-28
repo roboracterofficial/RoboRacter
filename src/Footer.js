@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Footer = () => (
+const Footer = ({ onContactClick }) => (
   <footer className="bg-black text-white">
     {/* Main Footer Content */}
     <div className="max-w-7xl mx-auto px-4 py-12">
@@ -19,7 +19,7 @@ const Footer = () => (
           <h3 className="font-bold text-xl mb-4">Quick Links</h3>
           <ul className="space-y-2">
             <li><a href="#" className="text-sm hover:text-gray-300 transition">HOME</a></li>
-            <li><a href="#" className="text-sm hover:text-gray-300 transition" onClick={e => e.preventDefault()}>SCHEDULE A DEMO CLASS</a></li>
+            <li><a href="#" className="text-sm hover:text-gray-300 transition" onClick={(e) => { e.preventDefault(); onContactClick(); }}>SCHEDULE A DEMO CLASS</a></li>
             <li><a href="#" className="text-sm hover:text-gray-300 transition" onClick={e => e.preventDefault()}>AUTOBOT BASIC LEVEL</a></li>
             <li><a href="#" className="text-sm hover:text-gray-300 transition" onClick={e => e.preventDefault()}>SHOP <span className='text-xs'>(opening soon)</span></a></li>
           </ul>
