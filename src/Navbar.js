@@ -50,9 +50,10 @@ const Navbar = (props) => {
           </div>
           {/* Navigation links centered - hidden on mobile, visible on tablet+ */}
           <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 items-center space-x-4 xl:space-x-8">
+            <Link to="/" className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Home</Link>
             <a href="#courses" onClick={scrollToCourses} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Workshops</a>
             <a href="#offerings" onClick={scrollToServices} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Services</a>
-            <a href="#gallery" className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Gallery</a>
+            <Link to="/gallery" className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Gallery</Link>
             <a href="#demo-class" onClick={(e) => { e.preventDefault(); onContactClick(); }} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Demo Class</a>
             <a href="#footer" onClick={scrollToFooter} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>About Us</a>
           </div>
@@ -83,9 +84,10 @@ const Navbar = (props) => {
       {isMenuOpen && (
         <div className="lg:hidden bg-black bg-opacity-90 rounded-lg mt-2 p-4">
           <div className="flex flex-col space-y-3">
+            <Link to="/" onClick={() => setIsMenuOpen(false)} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Home</Link>
             <a href="#courses" onClick={scrollToCourses} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Workshops</a>
             <a href="#offerings" onClick={scrollToServices} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Services</a>
-            <a href="#gallery" className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Gallery</a>
+            <Link to="/gallery" onClick={() => setIsMenuOpen(false)} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Gallery</Link>
             <a href="#demo-class" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); onContactClick(); }} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Demo Class</a>
             <a href="#footer" onClick={scrollToFooter} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>About Us</a>
             <button
