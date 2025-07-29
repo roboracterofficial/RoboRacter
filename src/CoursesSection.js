@@ -60,7 +60,7 @@ const CoursesSection = ({ onEnrollClick }) => (
           className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-medium text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           style={{ fontFamily: "'Fredoka', sans-serif" }}
         >
-          🚀 Schedule a Demo Class
+          🚀 Schedule Demo Class
         </button>
       </div>
       
