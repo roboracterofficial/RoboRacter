@@ -24,6 +24,7 @@ const Gallery = () => {
                 src={image}
                 alt={`Gallery ${index + 1}`}
                 className="w-full h-56 object-cover"
+                style={{ imageRendering: 'crisp-edges' }}
               />
             </div>
           ))}

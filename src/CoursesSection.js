@@ -53,6 +53,17 @@ const headingStyle = { fontFamily: "'Roboto Slab', serif" };
 const CoursesSection = ({ onEnrollClick }) => (
   <section id="courses" className="py-12 bg-gray-50">
     <div className="px-2 sm:px-4 lg:px-6">
+      {/* Demo Class Button */}
+      <div className="text-center mb-12">
+        <button 
+          onClick={onEnrollClick}
+          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-medium text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          style={{ fontFamily: "'Fredoka', sans-serif" }}
+        >
+          🚀 Schedule a Demo Class
+        </button>
+      </div>
+      
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold flex justify-center items-center gap-2">
           <span className="text-blue-500 font-normal">Our Best</span>
@@ -65,6 +76,7 @@ const CoursesSection = ({ onEnrollClick }) => (
           <span className="inline-block align-middle" style={{width: '90px', height: '4px', background: '#ef4444', borderRadius: '2px'}}></span>
         </div>
       </div>
+      
       <div className="max-w-[1584px] mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-stretch">
           {courses.map((course, idx) => (

@@ -54,8 +54,6 @@ const Navbar = (props) => {
             <a href="#courses" onClick={scrollToCourses} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Workshops</a>
             <a href="#offerings" onClick={scrollToServices} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Services</a>
             <Link to="/gallery" className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Gallery</Link>
-            <a href="#demo-class" onClick={(e) => { e.preventDefault(); onContactClick(); }} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>Demo Class</a>
-            <a href="#footer" onClick={scrollToFooter} className="text-white uppercase hover:text-gray-200 text-xs md:text-xs lg:text-sm xl:text-base font-medium" style={menuStyle}>About Us</a>
           </div>
           {/* Mobile menu button - visible only on mobile and tablet */}
           <div className="lg:hidden">
@@ -88,8 +86,6 @@ const Navbar = (props) => {
             <a href="#courses" onClick={scrollToCourses} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Workshops</a>
             <a href="#offerings" onClick={scrollToServices} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Services</a>
             <Link to="/gallery" onClick={() => setIsMenuOpen(false)} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Gallery</Link>
-            <a href="#demo-class" onClick={(e) => { e.preventDefault(); setIsMenuOpen(false); onContactClick(); }} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>Demo Class</a>
-            <a href="#footer" onClick={scrollToFooter} className="text-white uppercase hover:text-gray-200 font-medium" style={mobileMenuStyle}>About Us</a>
             <button
               onClick={() => { setIsMenuOpen(false); onContactClick(); }}
               className="text-white uppercase hover:text-gray-200 font-medium text-left" style={mobileMenuStyle}
