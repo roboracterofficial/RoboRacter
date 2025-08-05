@@ -8,6 +8,10 @@ const images = [
   "/roboracter-student3.webp",
   "/roboracter-student4.webp",
   "/roboracter-student5.webp",
+  "/roboracter-student6.webp",
+  "/roboracter-student7.webp",
+  "/roboracter-student8.webp",
+  "/roboracter-student9.webp",
 ];
 
 const Gallery = () => {
