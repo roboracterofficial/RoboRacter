@@ -65,15 +65,15 @@ const CoursesSection = ({ onEnrollClick }) => (
       </div>
       
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold flex justify-center items-center gap-2">
-          <span className="text-blue-500 font-normal">Our Best</span>
-          <span className="text-red-700 font-extrabold">Courses</span>
+                <h2 className="text-3xl font-bold flex justify-center items-center gap-2" style={{fontFamily: "'Montserrat', sans-serif"}}>
+          <span className="font-normal" style={{color: '#0C54A4'}}>Our Best</span>
+          <span className="font-extrabold" style={{color: '#FF8500'}}>Courses</span>
         </h2>
         <div className="flex justify-center items-center mt-2">
-          <span className="w-1.5 h-1.5 bg-red-500 rounded-full inline-block mr-1"></span>
-          <span className="w-1.5 h-1.5 bg-red-500 rounded-full inline-block mr-1"></span>
-          <span className="w-1.5 h-1.5 bg-red-500 rounded-full inline-block mr-2"></span>
-          <span className="inline-block align-middle" style={{width: '90px', height: '4px', background: '#ef4444', borderRadius: '2px'}}></span>
+          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
+          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
+          <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
+          <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#FF8500', borderRadius: '3.5px'}}></span>
         </div>
       </div>
       
