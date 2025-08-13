@@ -51,13 +51,13 @@ const OfferingsSection = ({ onEnrollClick }) => (
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold flex justify-center items-center gap-2" style={{fontFamily: "'Montserrat', sans-serif"}}>
           <span className="font-normal" style={{color: '#0C54A4'}}>Our</span>
-          <span className="font-extrabold" style={{color: '#FF8500'}}>services</span>
+          <span className="font-extrabold" style={{color: '#b91c1c'}}>services</span>
         </h2>
         <div className="flex justify-center items-center mt-2">
-          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#FF8500', borderRadius: '3.5px'}}></span>
+          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+          <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+          <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#b91c1c', borderRadius: '3.5px'}}></span>
         </div>
       </div>
       <div className="max-w-[1584px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch mb-16">
@@ -79,13 +79,13 @@ const OfferingsSection = ({ onEnrollClick }) => (
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold flex justify-center items-center gap-2" style={{fontFamily: "'Montserrat', sans-serif"}}>
           <span className="font-normal" style={{color: '#0C54A4'}}>Our</span>
-          <span className="font-extrabold" style={{color: '#FF8500'}}>Expertise</span>
+          <span className="font-extrabold" style={{color: '#b91c1c'}}>Expertise</span>
         </h2>
         <div className="flex justify-center items-center mt-2">
-          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#FF8500', borderRadius: '3.5px'}}></span>
+          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+          <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+          <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#b91c1c', borderRadius: '3.5px'}}></span>
         </div>
       </div>
       <div className="flex flex-wrap justify-center gap-12 mb-8">

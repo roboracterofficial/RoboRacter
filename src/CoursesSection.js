@@ -65,16 +65,16 @@ const CoursesSection = ({ onEnrollClick }) => (
       </div>
       
       <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold flex justify-center items-center gap-2" style={{fontFamily: "'Montserrat', sans-serif"}}>
-          <span className="font-normal" style={{color: '#0C54A4'}}>Our Best</span>
-          <span className="font-extrabold" style={{color: '#FF8500'}}>Courses</span>
-        </h2>
-        <div className="flex justify-center items-center mt-2">
-          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-          <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#FF8500', borderRadius: '3.5px'}}></span>
-        </div>
+                         <h2 className="text-3xl font-bold flex justify-center items-center gap-2" style={{fontFamily: "'Montserrat', sans-serif"}}>
+           <span className="font-normal" style={{color: '#0C54A4'}}>Our Best</span>
+           <span className="font-extrabold" style={{color: '#b91c1c'}}>Courses</span>
+         </h2>
+                 <div className="flex justify-center items-center mt-2">
+           <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+           <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+           <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+           <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#b91c1c', borderRadius: '3.5px'}}></span>
+         </div>
       </div>
       
       <div className="max-w-[1584px] mx-auto">

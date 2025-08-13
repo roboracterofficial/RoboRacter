@@ -45,16 +45,16 @@ const QnASection = () => {
       </div>
       <div className="max-w-5xl mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold flex justify-center items-center gap-2" style={{fontFamily: "'Montserrat', sans-serif"}}>
-            <span className="font-normal" style={{color: '#0C54A4'}}>Roboracter</span>
-            <span className="font-extrabold" style={{color: '#FF8500'}}>-FAQ</span>
-          </h2>
-          <div className="flex justify-center items-center mt-2">
-            <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-            <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-            <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#FF8500', borderRadius: '3px'}}></span>
-            <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#FF8500', borderRadius: '3.5px'}}></span>
-          </div>
+                     <h2 className="text-4xl font-bold flex justify-center items-center gap-2" style={{fontFamily: "'Montserrat', sans-serif"}}>
+             <span className="font-normal" style={{color: '#0C54A4'}}>Roboracter</span>
+             <span className="font-extrabold" style={{color: '#b91c1c'}}>-FAQ</span>
+           </h2>
+                     <div className="flex justify-center items-center mt-2">
+             <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+             <span className="w-2 h-2 inline-block mr-1" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+             <span className="w-2 h-2 inline-block mr-2" style={{backgroundColor: '#b91c1c', borderRadius: '3px'}}></span>
+             <span className="inline-block align-middle" style={{width: '117px', height: '7px', background: '#b91c1c', borderRadius: '3.5px'}}></span>
+           </div>
         </div>
         <div className="space-y-4">
           {qna.map((item, idx) => (
