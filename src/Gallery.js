@@ -18,6 +18,7 @@ const galleryItems = [
   { type: "image", src: "/roboracter-student13.webp" },
   { type: "video", src: "/roboracter-studentv1.mp4" },
   { type: "video", src: "/robotex.mp4" },
+  { type: "video", src: "/robotex-studentv2.mp4" },
 ];
 
 const Gallery = () => {
