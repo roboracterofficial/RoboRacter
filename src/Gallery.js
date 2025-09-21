@@ -13,7 +13,11 @@ const galleryItems = [
   { type: "image", src: "/roboracter-student8.webp" },
   { type: "image", src: "/roboracter-student9.webp" },
   { type: "image", src: "/roboracter-student10.webp" },
+  { type: "image", src: "/roboracter-student11.webp" },
+  { type: "image", src: "/roboracter-student12.webp" },
+  { type: "image", src: "/roboracter-student13.webp" },
   { type: "video", src: "/roboracter-studentv1.mp4" },
+  { type: "video", src: "/robotex.mp4" },
 ];
 
 const Gallery = () => {
@@ -73,7 +77,12 @@ const Gallery = () => {
                     controls
                     muted
                     loop
+                    preload="metadata"
                     style={{ imageRendering: 'crisp-edges' }}
+                    onLoadedData={(e) => {
+                      // Set currentTime to show first frame instead of black screen
+                      e.target.currentTime = 0.1;
+                    }}
                   >
                     Your browser does not support the video tag.
                   </video>
